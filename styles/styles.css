@@ -1,38 +1,40 @@
 /*Inicio Fuentes*/
-@font-face{
-    font-family:"webSimbolsRegular";
+@font-face {
+    font-family: "webSimbolsRegular";
     src: url(fonts/websymbols-regular-webfont.eot);
     src: url(fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
-         url(fonts/websymbols-regular-webfont.woff) format('woff'),
-         url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
-         url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+        url(fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
+        url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
-    font-family:"BebasNeue";
+@font-face {
+    font-family: "BebasNeue";
     src: url(fonts/BebasNeue.otf);
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
-    font-family:"webSimbolsRegular";
+
+@font-face {
+    font-family: "webSimbolsRegular";
     src: url(fonts/websymbols-regular-webfont.eot);
     src: url(fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
-         url(fonts/websymbols-regular-webfont.woff) format('woff'),
-         url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
-         url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+        url(fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(fonts/websymbols-regular-webfont.ttf) format('truetype'),
+        url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 
 /*Fin Fuentes*/
 
 
 /*Inicio Estilos Generales*/
-*{
+* {
     text-decoration: none;
     margin: 0px;
     padding: 0px;
@@ -44,7 +46,7 @@
 
 /*Inicio Container*/
 
-#container{
+#container {
     width: 95%;
     height: auto;
     margin: 0px auto;
@@ -58,7 +60,7 @@
 
 /*Inicio Cabecera*/
 
-#header{
+#header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,20 +81,22 @@
     color: #03363d;
 }
 
-.logo-bilioteca h2{
+.logo-bilioteca h2 {
     font-family: "webSimbolsRegular";
 }
 
-.logo-bilioteca label{
+.logo-bilioteca label {
     font-family: "webSimbolsRegular";
 }
 
 
-.logo-bilioteca h2:hover{
+.logo-bilioteca h2:hover {
     color: #A52A2A;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     flex-grow: 1;
     flex-basis: 40%;
 
@@ -102,51 +106,52 @@
     margin-left: 6px;
     color: #03363d;
     text-shadow: 1px 1px #ccc;
-    text-transform:none;
+    text-transform: none;
+
 }
 
-.logo h1{
+.logo h1 {
     font-family: Helvetica, sans-serif;
     font-weight: 900;
     font-size: 30px;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     color: #03363d;
 }
 
-.logo a:hover{
+.logo a:hover {
     color: #A52A2A;
 }
 
-#menu{
+#menu {
     flex-grow: 1;
     flex-basis: 30%;
     height: 100%;
     padding-right: 20px;
 }
 
-#menu > ul{
-   
+#menu>ul {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
 
     height: 100%;
     list-style: none;
 }
 
-#menu a{
+#menu a {
     color: #444;
-    text-transform:none;
+    text-transform: none;
     padding: 15px;
     transition: all 300ms;
 }
 
-#menu a:hover{
+#menu a:hover {
     background: #A52A2A;
     color: white;
 }
@@ -154,7 +159,7 @@
 /*Fin cabecera*/
 
 /*Banner*/
-#banner{
+#banner {
     width: 95%;
     height: 200px;
     box-shadow: 0px 0px 2px gray;
@@ -165,16 +170,17 @@
     overflow: hidden;
 }
 
-@keyframes backBanner{
-    0%{
-        background-position: 0px 0px ;
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
     }
-    100%{
+
+    100% {
         background-position: -341px -395px;
     }
 }
 
-#banner h1{
+#banner h1 {
     display: block;
     width: 850px;
     font-family: "'PT Serif', serif;";
@@ -189,14 +195,15 @@
     animation: showText 7s linear;
 }
 
-@keyframes showText{
-    0%{
-        transform: translateY(-500%) scale(1,1);
+@keyframes showText {
+    0% {
+        transform: translateY(-500%) scale(1, 1);
         opacity: 1;
 
     }
-    100%{
-        transform: translateX(0%) scale(1,1);
+
+    100% {
+        transform: translateX(0%) scale(1, 1);
         text-shadow: 2px 2px 1px black;
         color: white;
         opacity: 1;
@@ -207,21 +214,21 @@
 
 
 /*Inicio Articulos*/
-#content{
+#content {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.cards{
+.cards {
     justify-content: space-between;
-    flex-basis:97%;
+    flex-basis: 97%;
     margin: 20px auto;
     margin-left: 29px;
 }
 
-.cards article{
+.cards article {
     width: 98%;
     height: auto;
     border: 1px solid #ccc;
@@ -252,7 +259,7 @@
     color: white;
 }
 
-.card{
+.card {
     margin-bottom: 25px;
     border: 1px solid #ccc;
     flex-basis: 250px;
@@ -261,38 +268,39 @@
 }
 
 
-.cards article h4{
+.cards article h4 {
     display: block;
     font-size: 23px;
     margin: 3px;
 }
 
-.cards article h4 a{
+.cards article h4 a {
     text-decoration: none;
     color: black;
 }
 
-.cards article h4 a:hover{
+.cards article h4 a:hover {
     text-decoration: underline;
 }
 
-.cards .data{
+.cards .data {
     float: right;
     background: #393d3f;
-    color:white;
+    color: white;
     height: 30px;
     line-height: 30px;
     margin: -10px;
     padding: 4px;
     font-size: 13px;
     border-radius: 0px 0px 0px 5px;
-    
+
 }
-.cards .data span{
+
+.cards .data span {
     margin: 0px;
 }
 
-.cards article p{
+.cards article p {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -302,10 +310,10 @@
 
 /*Inicio Footer*/
 
-#footer{
+#footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content: center;
     height: 10% auto;
 
     align-items: center;
@@ -313,21 +321,21 @@
     color: white;
 }
 
-#footer #menu_footer{
+#footer #menu_footer {
     flex-basis: auto;
     flex-grow: 1;
     text-align: right;
     order: 1;
 }
 
-#footer #location{
+#footer #location {
     flex-basis: auto;
     flex-grow: 1;
     text-align: right;
     order: 2;
 }
 
-#footer #info{
+#footer #info {
     flex-basis: auto;
     flex-grow: 1;
     text-align: center;
@@ -335,7 +343,7 @@
 
 }
 
-#footer .wrap > div{
+#footer .wrap>div {
     width: 318px;
     height: 300px;
     margin: 20px;
@@ -344,20 +352,21 @@
     font-family: "TrebuchetMS";
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #f7f7f7;
     transition: all 300ms;
 }
 
-footer a:hover{
+footer a:hover {
     color: #c52929 !important;
-    transform: scale(1.2, 1.2); /*Pequeña animacion en las letras.*/
+    transform: scale(1.2, 1.2);
+    /*Pequeña animacion en las letras.*/
 
 }
 
 
-#footer h5{
+#footer h5 {
     width: 98%;
     height: 40px;
     line-height: 40px;
@@ -383,35 +392,35 @@ footer a:hover{
     list-style: none;
 }
 
-#footer ul li{
-    margin-top:  10px;
+#footer ul li {
+    margin-top: 10px;
     padding: 5px;
     border-bottom: 1px solid #ccc;
 }
 
-#footer ul li a{
+#footer ul li a {
     height: 40px;
     transition: all 300ms;
 }
 
-#footer ul li:hover a{
+#footer ul li:hover a {
     padding-left: 40px;
     color: white;
     width: 100%;
 }
 
-#footer iframe{
+#footer iframe {
     width: 100%;
     height: 70%;
     margin-top: 10px;
     border-radius: 5px solid white;
-    box-shadow:  0px 0px 5px gray;
+    box-shadow: 0px 0px 5px gray;
 
 }
 
 /*Botones e Imputs*/
 
-input[type="email"], 
+input[type="email"],
 input[type="password"],
 input[type="text"],
 input[type="number"] {
@@ -436,16 +445,18 @@ input[type="number"]:focus {
     box-shadow: 1px 1px 1px 1px #A52A2A inset;
 
 }
+
 input[type="email"]:hover,
 input[type="password"]:hover,
 input[type="text"]:hover,
 input[type="number"]:hover {
-    outline:none;
+    outline: none;
     box-shadow: 1px 1px 1px 1px #A52A2A inset;
 
 }
+
 input[type="submit"],
-button{
+button {
     display: block;
     align-content: center;
     text-align: center;
@@ -467,7 +478,7 @@ button{
 }
 
 input[type="submit"]:hover,
-button:hover{
+button:hover {
     box-shadow: 0px 0px 3px gray;
     transition: all 300ms;
 }
@@ -481,16 +492,17 @@ button:hover{
     box-shadow: 1px 1px #ccc inset;
     border-radius: 5px;
     color: gray;
-    
+
 }
 
 .selector:focus {
-    background-color:#f8f9f9;
+    background-color: #f8f9f9;
     box-shadow: 1px 1px 1px 1px #A52A2A inset;
     outline: none;
 }
+
 .selector:hover {
     outline: none;
     box-shadow: 1px 1px 1px 1px #A52A2A inset;
-    background-color:#f8f9f9;
+    background-color: #f8f9f9;
 }
