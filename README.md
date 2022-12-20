@@ -1,4 +1,4 @@
 # vistas-login
-Vistas diseñadas con HTML, CSS. Haciendo uso de medidas relativas, estilos, colores y flexbos para el login avanzado de php que se encuentra en el respositorio.
+Vistas diseñadas con HTML, CSS. Haciendo uso de medidas relativas, estilos, colores y flexbox para el login avanzado de php que se encuentra en el repositorio.
 
-Estos plantillas estan diseñadas con el objetivo de demostrar mis conocimientos en HTML y CSS.
+Esta plantilla están diseñadas con el objetivo de demostrar mis conocimientos en HTML y CSS.
